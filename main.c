@@ -3,16 +3,14 @@
 int main(void) {
     int num;
 
-    printf("Input an integer :");
+    printf("Input an integer: ");
     scanf("%d", &num);
 
-    if (num > 0) {
-        printf("Positive number.\n");
-    } else if (num < 0) {
-        printf("Negative number.\n");
-    } else {
-        printf("Zero.\n");
+    if (num < 0) {
+        num = -num;
     }
+
+    printf("Absolute value is %d.\n", num);
 
     return 0;
 }
